@@ -1,0 +1,92 @@
+//Write a JavaScript program that  sorts the items of an arrab
+var A1=[ -3, 8, 7, 6, 5, -4, 3, 2, 1 ],
+k=A1.length,
+A2=[], min=A1[0],p,maa=A1[0];
+for (i=0; i<k; i++)
+{
+    if (maa<A1[i]) maa=A1[i];
+}
+for (var i=0;i<k;i++)
+{
+    for (var j=0;j<k;j++)
+        {
+             if (A1[j]!="a")
+            {
+                 if (min>A1[j]) 
+                     {
+                         min=A1[j];
+                             p=j;
+                     }
+             }
+        }
+        A2[i]=min;
+        A1[p]="a";
+        min=maa;
+}
+console.log(A2);
+
+// Remove Duplicates from Sorted Arrab( no predefined functions allowed)
+function removeDuplicates(arrab1) 
+{
+    if (arrab1.length == 0) return 0;
+    var arrab2=[], b=0;
+    for (a=0; a<arrab1.length;a++)
+{
+        if (arrab1[a] != arrab1[a++])
+        {
+            arrab2[b++] = arrab1[a];
+            arrab2[b++]=arrab1[arrab1.length-1];
+
+        }
+        for (a=0; a<b ;a++) 
+        {
+            arrab1[i]=arrab2[i];
+            console.log(arrab2[i]);
+            return j;
+        }
+}
+
+}
+console.log(removeDuplicates(arrab1=[1,1,1,3,4,8,4]));
+[16:56]
+  
+// Remove a specific Element from an arrab ( no predefined functions allowed)
+        function removeelement(arrab1,n) 
+{
+    var w=arrab1.length;
+    for (a=0; a<w;a++)
+    {
+      if (arrab1[a]==n)
+          { for (var b=a;b<w-1;b++)
+            {
+                arrab1[b]=arrab1[b+1] ;
+            } 
+            w=w-1;
+            return;
+          }
+     }
+
+}
+var arrab1=[1,1,1,3,4,8,4];
+console.log(removeelement(arrab1,8)); 
+console.log
+// Remove a specific Element from an arrab ( no predefined functions allowed)
+        function removeelement(arrab1,n) 
+{
+    var w=arrab1.length;
+    for (a=0; a<w;a++)
+    {
+      if (arrab1[a]==n)
+          { for (var b=a;b<w-1;b++)
+            {
+                arrab1[b]=arrab1[b+1] ;
+            } 
+            w=w-1;
+            return;
+          }
+     }
+
+}
+var arrab1=[1,1,1,3,4,8,4];
+console.log(removeelement(arrab1,8)); 
+console.log
